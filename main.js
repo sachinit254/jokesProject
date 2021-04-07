@@ -10,7 +10,7 @@ const generateJokes = async () => {
       }
     };
 
-    const res = await fetch('https://api.chucknorris.io/jokes/random', setHeader);
+    const res = await fetch('https://icanhazdadjoke.com', setHeader);
     const data = await res.json();
     jokes.innerHTML = data.joke;
   } catch(err){
